@@ -1,0 +1,25 @@
+{
+  "name": "spectral-horn",
+  "version": "1.0.0",
+  "description": "JS13kGames 2D optical puzzle game - Spectral Horn",
+  "type": "module",
+  "author": "Filip Paulů",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "node build.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/csso": "^5.0.5",
+    "@types/html-minifier-terser": "^7.0.2",
+    "@types/node": "^26.2.0",
+    "csso": "^5.0.5",
+    "ect-bin": "^1.4.1",
+    "esbuild": "^0.28.2",
+    "html-minifier-terser": "^7.2.0",
+    "terser": "^5.50.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2"
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spectral Horn - JS13k Optical Puzzle</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body class="is-title">
+  <!-- Fullscreen High-DPI Canvas -->
+  <canvas id="c"></canvas>
+
+  <!-- Floating Game Header (Visible during gameplay) -->
+  <div id="game-header">
+    <div class="logo">✨ SPECTRAL HORN</div>
+    <select id="lvl-select"></select>
+    <button id="menu-btn" title="Return to Title Screen">🏠 Menu</button>
+    <button id="reset-btn" title="Reset Horn Positions">🔄 Reset</button>
+    <button id="mute-btn" title="Toggle Sound">🔊 Sound</button>
+  </div>
+
+  <!-- Floating Hint Bar (Visible during gameplay) -->
+  <div id="game-hint-bar">
+    <span id="lvl-title">Level 1</span>
+    <span>•</span>
+    <span id="lvl-hint">Rotate the unicorn horn so green light hits the sensor.</span>
+  </div>
+
+  <!-- Fullscreen Title Screen Overlay -->
+  <div id="title-screen">
+    <div class="title-hero">
+      <div class="title-main">✨ SPECTRAL HORN ✨</div>
+      <div class="title-sub">Awaken the ancient spectrum through crystalline unicorn horns</div>
+    </div>
+
+    <div class="title-action">
+      <button id="play-btn" class="btn-play">▶ PLAY</button>
+    </div>
+
+    <div class="title-cards">
+      <div class="glass-card">
+        <div class="card-header">🦄 About the Game</div>
+        <div class="card-content">
+          Awaken ancient spectral sensors! Channel pure white light through crystalline unicorn horns, disperse it into
+          dazzling rainbows, and charge every celestial sensor with photon-perfect precision.
+        </div>
+      </div>
+      <div class="glass-card">
+        <div class="card-header">🎮 Controls</div>
+        <div class="card-content">
+          <strong>🖱️ Drag Pony:</strong> Reposition unicorn across the cosmic arena.<br>
+          <strong>🟡 Golden Knob / Wheel:</strong> Rotate horn to steer the refraction angle.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Win Modal -->
+  <div id="win-modal" class="modal hidden">
+    <div class="modal-box">
+      <div class="modal-title">✨ LEVEL COMPLETE! ✨</div>
+      <p style="color: #cbd5e1;">All spectral sensors are fully charged and harmonized.</p>
+      <button id="next-btn" class="btn-primary" style="padding: 10px 24px; font-size: 1rem;">Next Level ➔</button>
+    </div>
+  </div>
+
+  <script type="module" src="./src/game.ts"></script>
+</body>
+
+</html>
